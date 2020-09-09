@@ -1,1 +1,1 @@
-	alert tcp $HOME_NET any -> any any (sid:???; gid:1; content:"MpCommunication"; http_header; content:!"microsoft.com"; nocase; msg:"Malicious MpCmdRun.exe Download"; classtype:trojan-activity; rev:1; )
+alert tcp $HOME_NET any -> any any (sid:????; gid:1; content:"MpCommunication"; http_header; content:!"microsoft.com"; nocase; content:!"go.microsoft.com"; nocase; content:!"www.microsoft.com"; nocase; msg:"Malicious MpCmdRun.exe Download"; classtype:trojan-activity; rev:3;)
