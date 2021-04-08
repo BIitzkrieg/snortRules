@@ -1,0 +1,1 @@
+alert tcp $HOME_NET any -> $EXTERNAL_NET 80 (sid:????; gid:1; uricontent:"/campo/"; content:"POST"; http_method; msg:"Possible Campo Loader C2 Traffic POST"; classtype:Command and Control; rev:1; )
